@@ -1,0 +1,29 @@
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+}
+h1{
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+ul{
+  list-style: none;
+  overflow: hidden;
+  background-color: yellow;
+}
+li{
+  display: inline;
+  background-color: red;
+}
+
+a{
+  text-decoration: none;
+}
+section{
+  clear: both;
+  background-color: #82c3a6;
+}
+footer{
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
