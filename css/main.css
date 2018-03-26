@@ -2,10 +2,14 @@
   font-family: Dancing Script;
   src: url(https://fonts.google.com/?query=Dancing+Script);
 }
+@keyframes slidein {
+0% {margin-top:150%}
+60% {margin-top:-5%}
+100% {margin-top:0}
+}
 body{
   background-color: #02010a;
   font-family: Dancing Script, cursive;
-
 }
 div#contenido{
   margin: 0 auto;
@@ -29,7 +33,7 @@ header{
     -moz-align-items: center;
     -o-align-items: center;
     -ms-align-items: center;
-  transition: 
+    animation: slidein 2s;
 }
 header div h1{
   color: white;
@@ -46,8 +50,9 @@ li{
 a{
   color: white;
   font-size: 1.2em;
+  padding: 0px;
 }
-a:active{
+a.activo{
   text-decoration: none;
 }
 section.unaColumn, section.tresColumn{
@@ -61,9 +66,6 @@ section.dosColumn{
   display: flex;
   justify-content: space-around;
   background-color: #d5c75f;
-}
-section.tresColumn{
-  display: flex;
 }
 section picture{
   padding: 20px;
@@ -112,4 +114,23 @@ footer h3{
 footer section p{
   text-align: center;
   margin: 0.5em;
+}
+@media only screen and (max-width: 900px) {
+    div#contenido {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+    header{
+      flex-direction: column;
+      align-items: center;
+    }
+    section{
+      flex-direction: column;
+      align-items: center;
+    }
+    footer{
+      flex-direction: column;
+      align-items: center;
+    }
 }
