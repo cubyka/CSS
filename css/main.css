@@ -1,39 +1,115 @@
+@@font-face {
+  font-family: Dancing Script;
+  src: url(https://fonts.google.com/?query=Dancing+Script);
+}
+body{
+  background-color: #02010a;
+  font-family: Dancing Script, cursive;
+
+}
+div#contenido{
+  margin: 0 auto;
+  max-width: 900px;
+}
 header{
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
+  display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+  justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -o-justify-content: space-around;
+    -ms-justify-content: space-around;
+  align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+  transition: 
 }
-h1{
+header div h1{
   color: white;
-  text-shadow: 2px 2px #02010a;
+  text-shadow: 2px 2px 2px #02010a;
 }
 ul{
   list-style: none;
   overflow: hidden;
-  background-color: yellow;
-  display: flex;
-    display:-webkit-flex;
-    display:-moz-flex;
-    display:-o-flex;
-    display:-ms-flex;
-  align-items: flex-end;
-    -webkit-align-items: flex-end;
-    -moz-align-items: flex-end;
-    -o-align-items: flex-end;
-    -ms-align-items: flex-end;
 }
 li{
-
-  background-color: red;
+  display: inline;
+  margin: 5px;
 }
-
 a{
+  color: white;
+  font-size: 1.2em;
+}
+a:active{
   text-decoration: none;
 }
-section{
-  clear: both;
+section.unaColumn, section.tresColumn{
   background-color: #82c3a6;
+  display: flex;
+  justify-content: center;
+}
+section.dosColumn{
+  padding: 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  background-color: #d5c75f;
+}
+section.tresColumn{
+  display: flex;
+}
+section picture{
+  padding: 20px;
+}
+section picture img{
+  width: 100%;
+  box-shadow: 2px 2px #02010a;
+}
+section a picture img{
+  width: 95%;
+}
+#imagen1{
+  filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+#imagen2, #imagen4, #imagen6{
+  filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+#imagen3{
+  filter: sepia(90%);
+    -webkit-filter: sepia(90%);
+}
+img#izquierda:hover{
+  transform: rotate(10deg);
+  border: 2px solid #82c3a6;
+  box-shadow: 2px 2px #82c3a6;
+  margin: 5px;
+}
+img#derecha:hover{
+  transform: translate(20px,-5px);
 }
 footer{
   background-color: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+footer section{
+  width: 225px;
+  flex-shrink: 1;
+}
+footer h3{
+  text-align: center;
+}
+footer section p{
+  text-align: center;
+  margin: 0.5em;
 }
