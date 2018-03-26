@@ -73,8 +73,11 @@ section.dosColumn{
   justify-content: space-around;
   background-color: #d5c75f;
 }
+section picture{
+  text-align: center;
+}
 section picture img{
-  width: 100%;
+  width: 95%;
   box-shadow: 2px 2px #02010a;
 }
 section a picture img{
