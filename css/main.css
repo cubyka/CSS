@@ -1,11 +1,14 @@
-@@font-face {
+/* @@font-face {
   font-family: Dancing Script;
   src: url(https://fonts.google.com/?query=Dancing+Script);
-}
+} */
 @keyframes slidein {
 0% {margin-top:150%}
 60% {margin-top:-5%}
 100% {margin-top:0}
+}
+* {
+    font-family: 'Dancing Script', cursive;
 }
 body{
   background-color: #02010a;
@@ -51,11 +54,14 @@ a{
   color: white;
   font-size: 1.2em;
   padding: 0px;
+  margin: 0px;
+  text-align: center;;
 }
 a.activo{
   text-decoration: none;
 }
 section.unaColumn, section.tresColumn{
+  padding: 20px;
   background-color: #82c3a6;
   display: flex;
   justify-content: center;
@@ -66,9 +72,6 @@ section.dosColumn{
   display: flex;
   justify-content: space-around;
   background-color: #d5c75f;
-}
-section picture{
-  padding: 20px;
 }
 section picture img{
   width: 100%;
